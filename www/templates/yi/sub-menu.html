@@ -1,0 +1,22 @@
+<div class="bar bar-subheader">
+  <div class="button-bar">
+    <a class="button button-clear icon-right" ng-class="current.menu == key?'ion-arrow-up-b':'ion-arrow-down-b'"
+       ng-click="clickCategory(key)" ng-repeat="(key, val) in condition">{{val['name']}}</a>
+  </div>
+</div>
+<div class="yi-menu has-subheader scroll-content" ng-repeat="(key, val) in menus" ng-show="current.menu == key">
+  <ul class="main" ng-class="current.subMenu.length > 0?'half':'full'">
+    <li ng-repeat="menu in val" ng-click="clickMenu(menu)">
+      <span>{{menu.name}}</span>
+      <span class="badge badge-light" ng-show="menu.count">{{menu.count}}<i ng-show="menu.sub.length > 0">
+        &gt;</i></span>
+    </li>
+  </ul>
+  <ul class="sub" ng-show="current.subMenu.length > 0">
+    <li class="active" ng-repeat="subMenu in current.subMenu" ng-click="clickSubMenu(subMenu)">
+      <span>{{subMenu.name}}</span>
+      <span class="badge">{{subMenu.count}}</span>
+    </li>
+  </ul>
+</div>
+<div class="yi-mask" ng-show="current.menu" ng-click="clickCategory('')"></div>

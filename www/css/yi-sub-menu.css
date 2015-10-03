@@ -1,0 +1,87 @@
+.yi-menu {
+  z-index: 99;
+  height: 50%;
+  background: #fff !important;
+  border-top: 1px solid #ccc;
+  padding-top: 0;
+}
+
+.yi-menu li.active {
+  background: #f6f4f0;
+}
+
+.yi-menu .main {
+  z-index: 999;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  float: left;
+  overflow-y: scroll;
+  border-right: 1px solid #ccc;
+}
+
+.yi-menu .sub {
+  z-index: 999;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  float: left;
+  overflow-y: scroll;
+}
+
+.yi-menu li {
+  -webkit-transform: translate3d(0, 0, 0);
+  border-bottom: 1px solid #ddd8cd;
+  line-height: 40px;
+  height: 40px;
+  position: relative;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.yi-menu span {
+  margin-left: 10px;
+}
+
+.yi-menu .badge {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.yi-menu .badge.badge-light {
+  background-color: #ccc;
+  color: #fff;
+}
+
+.yi-menu .half {
+  width: 50%;
+}
+
+.yi-menu .full {
+  width: 100%;
+}
+
+.yi-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .7);
+  z-index: 5;
+}
+
+.yi-menu ul::-webkit-scrollbar-track-piece {
+  background-color: #fff;
+}
+
+.yi-menu ul::-webkit-scrollbar {
+  width: 0;
+}
+
+.yi-menu ul::-webkit-scrollbar-thumb {
+  background: #999;
+}
