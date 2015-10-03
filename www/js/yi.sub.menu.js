@@ -24,6 +24,7 @@
             scope.current.menu = null;
             scope.query();
           }
+          $('.sub').scrollTop(0);
         };
 
         scope.clickSubMenu = function (subMenu) {
