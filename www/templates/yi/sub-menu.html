@@ -6,7 +6,7 @@
 </div>
 <div class="yi-menu has-subheader scroll-content" ng-repeat="(key, val) in menus" ng-show="current.menu == key">
   <ul class="main" ng-class="current.subMenu.length > 0?'half':'full'">
-    <li ng-repeat="menu in val" ng-click="clickMenu(menu)">
+    <li ng-repeat="menu in val" ng-click="clickMenu(menu)" ng-class="current.subMenu == menu.sub?'active':''">
       <span>{{menu.name}}</span>
       <span class="badge badge-light" ng-show="menu.count">{{menu.count}}<i ng-show="menu.sub.length > 0">
         &gt;</i></span>
