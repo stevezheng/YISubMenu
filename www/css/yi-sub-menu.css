@@ -85,3 +85,7 @@
 .yi-menu ul::-webkit-scrollbar-thumb {
   background: #999;
 }
+
+.yi-bar.bar .button.button-clear .icon:before, .yi-bar.bar .button.button-clear.icon:before, .yi-bar.bar .button.button-clear.icon-left:before, .yi-bar.bar .button.button-clear.icon-right:before {
+  font-size: 10px;
+}
